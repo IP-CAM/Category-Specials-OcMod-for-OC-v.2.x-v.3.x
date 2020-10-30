@@ -14,7 +14,7 @@ The Category Specials+ extension is for Opencart CMS 2.x/3.x versions. It allows
 * [Front](http://ocmod.freevar.com/oc3020/a)
 
 ## License
-[End-User License Agreement](https://git.io/JU29c)
+[End-User License Agreement](https://git.io/JT9YW)
 
 ## Links
 * [Opencart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=40385)

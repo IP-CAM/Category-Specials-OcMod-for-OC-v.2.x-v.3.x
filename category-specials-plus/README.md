@@ -4,10 +4,10 @@
 The Category Specials+ extension is for Opencart CMS 2.x/3.x versions. It allows to set special product offers based on categories.
 
 ## Features
+* Special offers based on category and applicable to all child categories
 * Priority of category based special offer, if products already have native special offers
-* Inheritance of special offer by child categories
-* OCMOD - core files do not change
-* OC Event System - does not depend on used template
+* Does not change core files due to the use of OCMOD modification system
+* Does not depend on used templates due to the use of OpenCart Event System
 
 ## Live demo
 * [Admin](http://ocmod.freevar.com/oc3020/a/admin/index.php?route=extension/module/category_specials)
@@ -18,6 +18,7 @@ The Category Specials+ extension is for Opencart CMS 2.x/3.x versions. It allows
 
 ## Links
 * [Opencart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=40385)
-* [Homepage](https://underr.space/en/notes/projects/project-0026.html)
 * [GitHub](https://git.io/JU29Z)
 
+## Related modules and extensions
+[Flexible Options+](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=40391)

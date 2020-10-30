@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>[underr] Category Specials+ &lt; Flexible Options+</name>
+	<code>category-specials--flexible-options</code>
+	<version>1.0.0</version>
+	<author>Andrii Burkatskyi aka underr</author>
+	<link>https://git.io/JUVfk</link>
+	<description>Add compatibility with the "Flexible Options+" module</description>
+	<file path="system/library/cart/cart.php" error="log">
+		<operation error="log">
+			<search>
+				<![CDATA[$price = $new_special;]]>
+			</search>
+			<add position="after">
+				<![CDATA[								// Add compatibility with the "Flexible Options" module
+								if (NULL !== $co) {
+									$co = (!empty($this->flexible_options_status) && $product_query->row['price'] > 0) ? $new_special / $product_query->row['price'] : 1;
+								}
+							} else {
+								unset($new_special);]]>
+			</add>
+		</operation>
+	</file>
+</modification>

@@ -2,7 +2,7 @@
 <modification>
 	<name>[underr] Category Specials+ &lt; Flexible Options+</name>
 	<code>category-specials--flexible-options</code>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<author>Andrii Burkatskyi aka underr</author>
 	<link>https://git.io/JUVfk</link>
 	<description>Add compatibility with the "Flexible Options+" module</description>
@@ -18,6 +18,35 @@
 								}
 							} else {
 								unset($new_special);]]>
+			</add>
+		</operation>
+	</file>
+
+	<file path="admin/controller/extension/module/category_specials.php" error="log">
+		<operation error="log" info="OC 2.x">
+			<search>
+				<![CDATA[$this->model_extension_event->addEvent('category_specials_specials', 'catalog/model/catalog/product/getProductRelated/after', 'extension/module/category_specials/injectProductSpecials');]]>
+			</search>
+			<add position="after">
+				<![CDATA[			$this->model_extension_event->addEvent('category_specials_specials', 'catalog/model/extension/module/flexible_options/getProduct/after', 'extension/module/category_specials/injectProductSpecials');]]>
+			</add>
+		</operation>
+		<operation error="log" info="OC 3.x">
+			<search>
+				<![CDATA[$this->model_setting_event->addEvent('category_specials_specials', 'catalog/model/catalog/product/getProductRelated/after', 'extension/module/category_specials/injectProductSpecials');]]>
+			</search>
+			<add position="after">
+				<![CDATA[			$this->model_setting_event->addEvent('category_specials_specials', 'catalog/model/extension/module/flexible_options/getProduct/after', 'extension/module/category_specials/injectProductSpecials');]]>
+			</add>
+		</operation>
+	</file>
+	<file path="catalog/controller/extension/module/category_specials.php" error="log">
+		<operation error="log">
+			<search>
+				<![CDATA[$route == 'catalog/product/getProduct']]>
+			</search>
+			<add position="replace">
+				<![CDATA[($route == 'catalog/product/getProduct' || $route == 'extension/module/flexible_options/getProduct')]]>
 			</add>
 		</operation>
 	</file>

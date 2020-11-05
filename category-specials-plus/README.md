@@ -26,6 +26,3 @@ The Category Specials+ extension is for Opencart CMS 2.x/3.x versions. It allows
 ## Links
 * [Opencart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=40385)
 * [GitHub](https://git.io/JU29Z)
-
-## Related modules and extensions
-[Flexible Options+](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=40391)

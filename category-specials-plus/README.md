@@ -1,7 +1,7 @@
 # Category Specials+
 
 ## Description
-The Category Specials+ extension is for Opencart CMS 2.x/3.x versions. It allows to set special product offers based on categories.
+The Category Specials+ extension is for Opencart CMS 2.x/3.x versions. It allows to set special price offers based on categories.
 
 ## Features
 * Special offers based on category and applicable to all child categories

@@ -5,7 +5,7 @@ The Category Specials+ extension is for Opencart CMS 2.x/3.x versions. It to set
 
 ## Features
 * Special offers based on category and applicable to all child categories
-* Priority of category specials over the product specials
+* Priority of the category-based specials over the product specials
 * Quick access links to to the original categories in the product list in admin dashboard
 * Special offer values beside category names in the category list in admin dashboard
 * Does not change core files due to the use of OCMOD modification system

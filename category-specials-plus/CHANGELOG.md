@@ -1,5 +1,9 @@
 # Change log
 
+## [1.2.0] - 2021.02.25
+### Fixed:
+- Sorting and selection a special offer for products related to multiple categories and some of them contain special offers
+
 ## [1.1.0] - 2021.02.24:
 ### Added:
  - Displaying category special prices in the product list

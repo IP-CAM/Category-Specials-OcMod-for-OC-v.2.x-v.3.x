@@ -1,5 +1,14 @@
 # Change log
 
+## [1.2.2] - 2021.03.01
+### Fixed:
+- Category-based specials for several groups in category list
+- Datepicker
+
+## [1.2.1] - 2021.02.26
+### Fixed:
+- Minor issues
+
 ## [1.2.0] - 2021.02.25
 ### Fixed:
 - Sorting and selection a special offer for products related to multiple categories and some of them contain special offers
